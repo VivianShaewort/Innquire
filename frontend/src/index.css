@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dgreen: #1a3e2b;
+  --color-shadow: #867771;
+  --color-seafoam: #e7efe6 ;
+  --color-marigold: #E4C028 ;
+  --color-brick: #420303;
+  --color-hunter: #01240e;
+
+}
+
+
+
+
+html {
+  .layout {
+    text-align: center;
+  }
+  .container {
+    padding: "15px"
+    
+  }
+
+}
+
+  
