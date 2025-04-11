@@ -38,7 +38,7 @@ export type HotelType = {
     checkOut: Date;
     totalCost: number;
 
-  }
+  };
 
 
 export type HotelSearchResponse = {
@@ -55,4 +55,4 @@ export type PaymentIntentResponse = {
     paymentIntentId: string,
     clientSecret: string,
     totalCost: number
-}
+};
