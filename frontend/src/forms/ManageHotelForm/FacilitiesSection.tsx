@@ -6,8 +6,8 @@ const FacilitiesSection = () => {
     const { register, formState: { errors }} = useFormContext<HotelFormData>();
 
     return(
-        <div>
-            <h2 className="text-2xl font-bold mb-3">
+        <div className="md:p-15">
+            <h2 className="text-2xl font-bold font-headers mb-3">
                 Facilities
             </h2>
             <div className="grid grid-cols-5 gap-3">

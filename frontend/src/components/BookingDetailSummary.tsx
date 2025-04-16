@@ -12,7 +12,7 @@ type Props = {
 const BookingDetailSummary = ({ checkIn, checkOut, adultCount, childCount, numberOfNights, hotel }: Props) => {
     return(
     <div className="grid gap-4 border border-slate-300 rounded-lg h-fit p-5">
-        <h2 className="text-xl font-bold">Your Booking Details</h2>
+        <h2 className="text-xl font-bold font-headers">Your Booking Details</h2>
 
         <div className="border-b py-2">
             Location:  
@@ -20,10 +20,10 @@ const BookingDetailSummary = ({ checkIn, checkOut, adultCount, childCount, numbe
         </div>
 
         <div className="flex justify-between">
-            <div>Check In
+            <div>Check In:
                 <div className="font-bold">{checkIn.toDateString()}</div>
             </div>
-            <div>Check Out
+            <div>Check Out:
                 <div className="font-bold">{checkOut.toDateString()}</div>
             </div>
         </div>

@@ -39,8 +39,8 @@ const Register = () => {
         mutation.mutate(data);
     });
 
-    return <form className="flex flex-col gap-5" onSubmit={onSubmit}>
-        <h2 className="text-3xl font-bold">Create an Account</h2>
+    return <form className="flex flex-col p-15 gap-5" onSubmit={onSubmit}>
+        <h2 className="text-3xl font-bold font-headers text-center">Create an Account</h2>
         <div className="flex flex-col md:flex-row gap-5">
          <label className="text-gray-800 font-bold text-sm flex-1">
             First Name
@@ -104,7 +104,7 @@ const Register = () => {
             )}
          </label>
          <span>
-            <button type="submit" className="bg-green-700 hover:bg-yellow-500 font-bold text-white text-xl p-2">Sign Up</button>
+            <button type="submit" className=" w-[200px] bg-dgreen hover:bg-shadow font-bold text-white hover:text-black text-xl p-2">Sign Up</button>
          </span>
     </form>;
 };

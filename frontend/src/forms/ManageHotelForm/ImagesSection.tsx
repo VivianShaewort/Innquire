@@ -23,8 +23,8 @@ const ImagesSection = () => {
     };
 
     return(
-        <div>
-        <h2 className="text-2xl font-bold mb-3">
+        <div className="md:p-15">
+        <h2 className="text-2xl font-bold font-headers mb-3">
             Images
         </h2>
         <div className="border rounded p-4 flex flex-col gap-4">

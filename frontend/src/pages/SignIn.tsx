@@ -38,8 +38,8 @@ const SignIn = () => {
   });
 
   return (
-    <form className="flex flex-col gap-5" onSubmit={onSubmit}>
-      <h2 className="text-3xl font-bold">Sign In</h2>
+    <form className="flex flex-col p-15 gap-5" onSubmit={onSubmit}>
+      <h2 className="text-3xl font-bold font-headers text-center">Sign In</h2>
       <label className="text-gray-700 text-sm font-bold flex-1">
         Email
         <input
@@ -69,15 +69,15 @@ const SignIn = () => {
         )}
       </label>
       <span className="flex items-center justify-between">
-        <span className="text-sm">
+        <span className="text-sm font-body">
           Not Registered?{" "}
-          <Link className="underline" to="/register">
+          <Link className="underline font-body" to="/register">
             Create an account here
           </Link>
         </span>
         <button
           type="submit"
-          className="bg-green-800 text-white p-2 font-bold hover:bg-yellow-500 text-xl"
+          className="bg-dgreen text-white p-2 font-bold hover:bg-shadow hover:text-black w-[200px] text-xl"
         >
           Login
         </button>

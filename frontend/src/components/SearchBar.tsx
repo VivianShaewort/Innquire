@@ -32,6 +32,7 @@ const SearchBar = () => {
     const maxDate = new Date();
     maxDate.setFullYear(maxDate.getFullYear() + 1)
     return (
+      
         <form onSubmit={handleSubmit} className="p-3 bg-marigold rounded shadow-md grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-4">
           <div className="flex flex-row items-center flex-1 bg-white p-2">
             <MdTravelExplore size={25} className="mr-2"/>
@@ -123,6 +124,7 @@ const SearchBar = () => {
 
           </div>
         </form>
+        
     )
 };
 

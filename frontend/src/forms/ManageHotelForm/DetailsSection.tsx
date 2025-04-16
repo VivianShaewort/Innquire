@@ -8,8 +8,8 @@ const DetailsSection = () => {
     } = useFormContext<HotelFormData>();
 
     return(
-        <div className="flex flex-col gap-4">
-            <h1 className="text-3xl font-bold mb-3">Add Hotel</h1>
+        <div className="flex flex-col md:p-15 gap-4">
+            <h1 className="text-3xl font-bold font-headers text-center mb-3">Add Hotel</h1>
 
             <label className="text-gray-800 font-bold text-sm flex-1">
            Name

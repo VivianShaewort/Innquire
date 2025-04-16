@@ -78,9 +78,9 @@ const Search = () => {
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-5">
-            <div className="rounded-lg border border-slate-300 p-5 h-fit lg:sticky top-10">
+            <div className="rounded-lg border border-slate-300 p-5 h-fit lg:sticky top-10 bg-seafoam">
                 <div className="space-y-5">
-                    <h3 className="text-lg font-semibold border-b border-slate-300 pb-5">
+                    <h3 className="text-lg font-semibold font-headers border-b border-slate-300 pb-5">
                      Filter by:
                     </h3>
                     <StarRatingFilter 
@@ -107,7 +107,7 @@ const Search = () => {
 
             <div className="flex flex-col gap-5">
                 <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold">
+                    <span className="text-xl font-bold font-body">
                         {hotelData?.pagination.total} Hotels found
                         {search.destination ? `in ${search.destination}` : ""}
                         

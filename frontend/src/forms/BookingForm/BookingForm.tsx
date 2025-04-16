@@ -88,7 +88,7 @@ const BookingForm = ({ currentUser, paymentIntent }: Props) => {
         <form 
         onSubmit={handleSubmit(onSubmit)}
         className="grid grid-cols-1 gap-5 rounded-lg border border-slate-300 p-5">
-            <span className="text-3xl font-bold">Confirm Your Details</span>
+            <span className="text-3xl font-bold font-headers">Confirm Your Details</span>
             <div className="grid grid-cols-2 gap-6">
                 <label className="text-gray-700 text-sm font-bold flex-1">
                     First Name
@@ -128,9 +128,9 @@ const BookingForm = ({ currentUser, paymentIntent }: Props) => {
             </div>
 
             <div className="space-y-2">
-                <h2 className="font-semibold text-xl">Your Price Summary</h2>
+                <h2 className="font-semibold text-xl font-headers">Your Price Summary</h2>
 
-                <div className="bg-seafoam p-4 rounded-md">
+                <div className="bg-seafoam p-4 rounded-md font-body">
                 <div className="font-semibold text-lg">
                     Total Cost: ${paymentIntent.totalCost.toFixed(2)}
                 </div>
@@ -141,7 +141,7 @@ const BookingForm = ({ currentUser, paymentIntent }: Props) => {
             </div>
 
             <div className="space-y-2">
-                <h3 className="font-semibold text-xl">Payment Details</h3>
+                <h3 className="font-semibold text-xl font-headers">Payment Details</h3>
 
                 <CardElement 
                 id="payment-element"

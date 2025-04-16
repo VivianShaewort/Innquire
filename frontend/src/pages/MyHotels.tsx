@@ -12,21 +12,34 @@ const myHotels = () => {
     });
 
     if (!hotelData) {
-        return <span>No Hotels Found</span>;
+        return <span className="font-headers">No Hotels Found</span>;
     }
 
     return(
         <div className="space-y-5">
             <span>
-                <h1 className="text-3xl font-bold">My Hotels</h1>
-                <Link to="/add-hotel" className="flex bg-dgreen text-white text-xl font-bold p-2 hover:bg-shadow">
+                <h1 className="text-3xl font-bold text-center font-headers">My Hotels</h1>
+                <Link to="/add-hotel" className="
+                flex 
+                justify-center
+                align-center
+                bg-marigold 
+                text-black 
+                text-xl 
+                w-[200px] 
+                rounded-md 
+                font-bold 
+                m-3 
+                p-2 
+                hover:bg-shadow 
+                hover:text-white">
                 Add Hotel</Link>
             </span>
             <div className="grid grid-cols-1 gap-8">
                 { hotelData.map((hotel) => (
-                    <div className="flex flex-col justify-between border border-slate-300 rounded-lg p-8 gap-5">
-                        <h2 className="text-2xl font-bold"> {hotel.name}</h2>
-                        <div className="whitespace-pre-line">{hotel.description}</div>
+                    <div className="flex flex-col justify-between bg-seafoam border border-slate-300 rounded-lg p-8 gap-5">
+                        <h2 className="text-2xl font-bold font-headers"> {hotel.name}</h2>
+                        <div className="whitespace-pre-line font-body">{hotel.description}</div>
                         <div className="grid grid-cols-5 gap-2">
                             <div className="border border-slate-300 rounded-sm p-3 flex items-center">
                                 <BsMap className="mr-1"/>

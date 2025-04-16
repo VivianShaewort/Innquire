@@ -20,14 +20,14 @@ const Detail = () => {
   }
 
   return (
-    <div className="space-y-6">
-      <div>
-        <span className="flex">
+    <div className="space-y-6 md:p-15">
+      <div className="pb-5">
+        <span className="flex justify-center">
           {Array.from({ length: hotel.starRating }).map(() => (
             <AiFillStar className="fill-yellow-400" />
           ))}
         </span>
-        <h1 className="text-3xl font-bold">{hotel.name}</h1>
+        <h1 className="text-3xl font-bold font-headers text-center">{hotel.name}</h1>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -51,7 +51,7 @@ const Detail = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr]">
-        <div className="whitespace-pre-line">{hotel.description}</div>
+        <div className="whitespace-pre-line font-body text-sm">{hotel.description}</div>
         <div className="h-fit">
           <GuestInfoForm
             pricePerNight={hotel.pricePerNight}

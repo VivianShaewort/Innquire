@@ -5,11 +5,11 @@ const GuestsSection = () => {
     const { register, formState: { errors }} = useFormContext<HotelFormData>(); 
 
     return (
-        <div>
-            <h2 className="text-2xl font-bold mb-3">
+        <div className="md:p-15">
+            <h2 className="text-2xl font-bold font-headers mb-3">
                 Guests
             </h2>
-            <div className="grid grid-cols-2 p-6 gap-5 bg-gray-300">
+            <div className="grid grid-cols-2 p-6 gap-5 bg-seafoam">
                 <label className="text-sm font-semibold text-gray-700">
                     Adults
                     <input className="rounded border w-full py-2 px-3 font-normal" 
