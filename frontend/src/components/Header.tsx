@@ -8,9 +8,15 @@ import SignOutButton from "./SignOutButton";
 
 
 
+
+
 const Header = () => {
 
+
+
   const { isLoggedIn } = useAppContext();
+
+
     
   return ( 
     

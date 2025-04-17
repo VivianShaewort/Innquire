@@ -10,27 +10,31 @@ const ImagesSection = () => {
         setValue, 
     } = useFormContext<HotelFormData>();
 
-    const existingImageUrls = watch("imageUrls");
+    const existingImageURLS = watch("imageURLS");
 
     const handleDelete = (
         event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-         imageUrl: string
+         imageURL: string
         ) => {
             event.preventDefault();
-            setValue("imageUrls", existingImageUrls.filter((url)=> url !== imageUrl));
+            setValue("imageURLS", existingImageURLS.filter((url)=> url !== imageURL));
 
 
     };
 
     return(
         <div className="md:p-15">
+        <span>
         <h2 className="text-2xl font-bold font-headers mb-3">
             Images
         </h2>
+        <p className="text-xs font-normal font-body mb-3">Can not accept files that are larger than 5 mb.</p>
+        </span>
+
         <div className="border rounded p-4 flex flex-col gap-4">
-            {existingImageUrls && (
+            {existingImageURLS && (
                 <div className="grid grid-cols-6 gap-4">
-                    {existingImageUrls.map((url)=>(
+                    {existingImageURLS.map((url)=>(
                         <div className="relative group">
                             <img src={url} className="min-h-full object-cover"/>
                             <button 
@@ -60,7 +64,8 @@ const ImagesSection = () => {
             className="w-full text-gray-700 font-normal"
             {...register("imageFiles", {
                 validate: (imageFiles) => {
-                    const totalLength = imageFiles.length + (existingImageUrls?.length || 0);
+                    const totalLength = imageFiles.length + (existingImageURLS?.length || 0);
+                    
 
                     if(totalLength === 0) {
                      return "Please add at least one image.";

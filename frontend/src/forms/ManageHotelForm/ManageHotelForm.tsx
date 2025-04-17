@@ -17,7 +17,7 @@ export type HotelFormData = {
     starRating: number;
     facilities: string[];
     imageFiles: FileList;
-    imageUrls: string[];
+    imageURLS: string[];
     adultCount: number;
     childCount: number;
 };
@@ -58,9 +58,9 @@ const ManageHotelForm = ({onSave, isLoading, hotel}: Props) => {
 
         });
 
-        if(formDataJson.imageUrls) {
-            formDataJson.imageUrls.forEach((url, index) => {
-                formData.append(`imageUrls[${index}]`, url);
+        if(formDataJson.imageURLS) {
+            formDataJson.imageURLS.forEach((url, index) => {
+                formData.append(`imageURLS[${index}]`, url);
 
             });
         }

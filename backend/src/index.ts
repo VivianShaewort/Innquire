@@ -10,7 +10,7 @@ import hotelRoutes from "./routes/hotels";
 import myHotelRoutes from "./routes/my-hotels";
 import bookingRoutes from "./routes/my-bookings";
 import path from "path";
-import bodyParser from "body-parser";
+
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -21,7 +21,6 @@ cloudinary.config({
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string)
 
 const  app = express();
-app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
